@@ -1,0 +1,71 @@
+.header {
+    background-color: #272727;
+    border-bottom: 4px solid #FF6600;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.header-content {
+    font-family: 'Cloud-Light';
+    font-size: 16px;
+    color: #444444;
+    margin: 15px auto 0 auto;
+    max-width: 1180px;
+}
+.navbar-brand {
+    padding: 0;
+}
+.img-logo {
+    width: 150px;
+    margin-top: 0;
+}
+.header-menu .nav-social nav,
+.header-menu .nav-menu nav {
+    margin-bottom: 0;
+    min-height: 35px;
+}
+.header-menu .nav-social img {
+    width: 28px;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: all 1s ease;
+}
+.header-menu .nav-social img:hover {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 1s ease;
+}
+.header-menu .nav-social li:nth-child(-1n+2) {
+    border-right: 1px solid #E6E6E6;
+}
+.header-menu .nav-social li a {
+    padding: 0 10px;
+    color: #E6E6E6;
+    background-color: transparent;
+}
+.header-menu .nav-social ul:nth-child(2) {
+    margin: 5px 20px 0 0;
+}
+.header-menu .nav-social ul:nth-child(2) li a:hover {
+    color: #FF6600;
+}
+.header-menu .nav-menu .navbar-collapse {
+    padding-right: 0;
+}
+.header-menu .nav-menu li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #EEEEEE;
+    border-radius: 15px 15px 0 0;
+    transition: all 0.5s ease;
+}
+.header-menu .nav-menu li a:hover {
+    color: #444444;
+    transition: all 0.5s ease;
+}
+.header-menu .nav-menu li a:focus {
+    color: #444444;
+    background-color: #EEEEEE;
+}

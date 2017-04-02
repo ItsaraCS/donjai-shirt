@@ -1,134 +1,15 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="header">
-            <div class="header-content">
-                <div class="header-logo col-md-3">
-                    <nav class="navbar">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="#">
-                                <img class="img-logo" src="./assets/images/logo-4.png">
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-                <div class="header-menu col-md-9">
-                    <div class="nav-social">
-                        <nav class="navbar">
-                            <ul class="nav nav-pills navbar-right">
-                                <li><a href="#"><img src="./assets/images/facebook-logo.png"></a></li>
-                                <li><a href="#"><img src="./assets/images/instagram-logo.png"></a></li>
-                                <li><a href="#"><img src="./assets/images/line-logo.png"></a></li>
-                            </ul>
-                            <ul class="nav nav-pills navbar-right">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-unlock-alt"></i> เข้าสู่ระบบ
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-star"></i> รายการโปรด
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-shopping-basket"></i> ตะกร้าสินค้า
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="nav-menu">
-                        <nav class="navbar">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav nav-pills">
-                                    <li><a href="#">หน้าแรก</a></li>
-                                    <li><a href="#">สินค้า</a></li>
-                                    <li><a href="#">โปรโมชั่น</a></li>
-                                    <li><a href="#">แจ้งชำระเงิน</a></li>
-                                    <li><a href="#">สถานะการจัดส่ง</a></li>
-                                    <li><a href="#">บทความ</a></li>
-                                    <li><a href="#">วิธีการสั่งซื้อสินค้า</a></li>
-                                    <li><a href="#">ติดต่อเรา</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
+        <app-header></app-header>
+        <app-slidebar></app-slidebar>
+        <div class="section container">
+            <div class="section-sidebar col-md-3">
+                <app-sidebar></app-sidebar>
+            </div>
+            <div class="section-content col-md-9">
+                <router-outlet></router-outlet>
             </div>
         </div>
-        <div class="slider">
-            <div id="slider-images" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#slider-images" data-slide-to="0" class="active"></li>
-                    <li data-target="#slider-images" data-slide-to="1"></li>
-                    <li data-target="#slider-images" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="./assets/images/slider-1.jpg">
-                    </div>
-                    <div class="item">
-                        <img src="./assets/images/slider-2.jpg">
-                    </div>
-                    <div class="item">
-                        <img src="./assets/images/slider-3.jpg">
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#slider-images" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#slider-images" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <div class="section container" style="background-color: #EEEEEE;">
-            A<br>A<br>A<br>A<br>A<br>A<br>A<br>A<br>A<br>A<br>
-            A<br>A<br>A<br>A<br>A<br>A<br>A<br>A<br>A<br>A<br>
-            A<br>A<br>A<br>A<br>A<br>A<br>A<br>A<br>A<br>A<br>
-        </div>
-        <div class="footer">
-            <div class="footer-content container">
-                <div class="footer-menu col-md-12">
-                    <nav class="navbar">
-                        <ul class="nav nav-pills">
-                            <li><a href="#">หน้าแรก</a></li>
-                            <li><a href="#">สินค้า</a></li>
-                            <li><a href="#">โปรโมชั่น</a></li>
-                            <li><a href="#">แจ้งชำระเงิน</a></li>
-                            <li><a href="#">สถานะการจัดส่ง</a></li>
-                            <li><a href="#">บทความ</a></li>
-                            <li><a href="#">วิธีการสั่งซื้อสินค้า</a></li>
-                            <li><a href="#">ติดต่อเรา</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-social col-md-12">
-                    <nav class="navbar">
-                        <ul class="nav nav-pills">
-                            <li><a href="#"><img src="./assets/images/facebook-logo.png"></a></li>
-                            <li><a href="#"><img src="./assets/images/instagram-logo.png"></a></li>
-                            <li><a href="#"><img src="./assets/images/line-logo.png"></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-copyright col-md-12 text-center">
-                    &copy; 2017 Donjai-Shirt. All Rights Reserved. Webdesign by ITSARA_CS.
-                </div>
-            </div>
-        </div>
+        <app-footer></app-footer>
     </div>
 </div>
-<!--<app-header></app-header>
-<app-footer></app-footer>-->
