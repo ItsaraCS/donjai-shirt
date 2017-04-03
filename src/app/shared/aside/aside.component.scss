@@ -1,0 +1,82 @@
+.aside div > h3 {
+    font-family: 'Cloud-Light';
+    font-weight: bold;
+    color: #0076A3;
+}
+.aside .aside-member .member-avatar > img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.aside .aside-member .member-avatar p {
+    font-size: 14px;
+}
+.aside .aside-member .member-avatar p > a {
+    text-decoration: none;
+    color: #333333;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.aside .aside-member .member-avatar p > a:hover {
+    color: #BF360C;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.aside .aside-member .member-menu p {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #0076A3;
+}
+.aside .aside-member .member-menu ul {
+    padding-left: 30px;
+    list-style: none;
+}
+.aside .aside-member .member-menu li i {
+    margin-right: 5px;
+}
+.aside .aside-member .member-menu li > a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333333;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.aside .aside-member .member-menu li > a:hover {
+    font-size: 14px;
+    color: #BF360C;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.aside .aside-fanpage .fanpage-content {
+    padding: 15px;
+}
+.aside .aside-statistic ul {
+    padding-left: 30px;
+    list-style: none;
+}
+.aside .aside-statistic li i {
+    margin-right: 5px;
+}
+.aside .aside-statistic li {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+.aside .aside-statistic li span {
+    margin-left: 10px;
+    font-weight: normal;
+}
+.aside .line {
+    width: 90%;
+    margin: 0;
+    display: inline-block;
+    border-bottom: 1px solid #B2B2B2;
+}

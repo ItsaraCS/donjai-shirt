@@ -1,64 +1,83 @@
 <div class="header">
-    <div class="header-content">
+    <div>
         <div class="header-logo col-md-3">
             <nav class="navbar">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img class="img-logo" src="./assets/images/logo-4.png">
+                    <a routerLink="/" class="navbar-brand">
+                        <img src="./assets/images/logo-4.png">
                     </a>
                 </div>
             </nav>
-        </div>
+        </div> 
         <div class="header-menu col-md-9">
-            <div class="nav-social">
+            <div class="menu-info">
                 <nav class="navbar">
-                    <ul class="nav nav-pills navbar-right">
-                        <li><a href="#"><img src="./assets/images/facebook-logo.png"></a></li>
-                        <li><a href="#"><img src="./assets/images/instagram-logo.png"></a></li>
-                        <li><a href="#"><img src="./assets/images/line-logo.png"></a></li>
+                    <ul class="info-social nav nav-pills navbar-right">
+                        <li><a href="https://web.facebook.com/Donjai.Shirt" target="_blank"><img src="./assets/images/facebook-logo.png"></a></li>
+                        <li><a href="https://www.instagram.com/donjai_shirt" target="_blank"><img src="./assets/images/instagram-logo.png"></a></li>
+                        <li><a href="http://line.me/ti/p/~itsara_cs" target="_blank"><img src="./assets/images/line-logo.png"></a></li>
                     </ul>
-                    <ul class="nav nav-pills navbar-right">
+                    <ul class="info-order nav nav-pills navbar-right">
                         <li>
-                            <a href="#">
+                            <a routerLink="/">
                                 <i class="fa fa-unlock-alt"></i> เข้าสู่ระบบ
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a routerLink="/">
                                 <i class="fa fa-star"></i> รายการโปรด
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a routerLink="/">
                                 <i class="fa fa-shopping-basket"></i> ตะกร้าสินค้า
                             </a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="nav-menu">
-                <nav class="navbar">
+            <div class="menu-link">
+                <!--<nav class="navbar">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                            data-target="#menuLinkNav" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="collapse navbar-collapse" id="menuLinkNav">
                         <ul class="nav nav-pills navbar-right">
-                            <li><a href="#">หน้าแรก</a></li>
-                            <li><a href="#">สินค้า</a></li>
-                            <li><a href="#">โปรโมชั่น</a></li>
-                            <li><a href="#">แจ้งชำระเงิน</a></li>
-                            <li><a href="#">สถานะการจัดส่ง</a></li>
-                            <li><a href="#">บทความ</a></li>
-                            <li><a href="#">วิธีการสั่งซื้อสินค้า</a></li>
-                            <li><a href="#">ติดต่อเรา</a></li>
+                            <li><a routerLink="/">หน้าแรก</a></li>
+                            <li><a routerLink="/">โปรโมชั่น</a></li>
+                            <li><a routerLink="/">สินค้า</a></li>
+                            <li><a routerLink="/">แจ้งชำระเงิน</a></li>
+                            <li><a routerLink="/">สถานะการจัดส่ง</a></li>
+                            <li><a routerLink="/">บทความ</a></li>
+                            <li><a routerLink="/">วิธีการสั่งซื้อสินค้า</a></li>
+                            <li><a routerLink="/">ติดต่อเรา</a></li>
+                        </ul>
+                    </div>
+                </nav>-->
+                <nav class="navbar">
+                    <div id="menuLinkNav">
+                        <ul class="nav nav-pills navbar-right">
+                            <li><a routerLink="/">หน้าแรก</a></li>
+                            <li><a routerLink="/">โปรโมชั่น</a></li>
+                            <li><a routerLink="/">สินค้า</a></li>
+                            <li><a routerLink="/">แจ้งชำระเงิน</a></li>
+                            <li><a routerLink="/">สถานะการจัดส่ง</a></li>
+                            <li><a routerLink="/">บทความ</a></li>
+                            <li><a routerLink="/">วิธีการสั่งซื้อสินค้า</a></li>
+                            <li><a routerLink="/">ติดต่อเรา</a></li>
                         </ul>
                     </div>
                 </nav>
+                <a class="show-menu-link">
+                    <i class="fa fa-bars"></i> เมนู
+                </a>
+                <div id="aaa">AAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
             </div>
         </div>
     </div>

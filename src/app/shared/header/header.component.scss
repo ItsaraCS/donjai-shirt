@@ -1,71 +1,125 @@
 .header {
-    background-color: #272727;
-    border-bottom: 4px solid #FF6600;
-    position: fixed;
     width: 100%;
-    z-index: 9999;
+    position: fixed;
+    z-index: 99;
+    border-bottom: 4px solid #FF6600;
+    background-color: #272727;
 }
-.header-content {
+.header > div {
+    max-width: 1180px;
+    margin: 15px auto 0;
     font-family: 'Cloud-Light';
     font-size: 16px;
     color: #444444;
-    margin: 15px auto 0 auto;
-    max-width: 1180px;
 }
-.navbar-brand {
+.header-logo .navbar-brand {
     padding: 0;
 }
-.img-logo {
+.header-logo .navbar-brand > img {
     width: 150px;
     margin-top: 0;
 }
-.header-menu .nav-social nav,
-.header-menu .nav-menu nav {
-    margin-bottom: 0;
+.header-menu .menu-info nav,
+.header-menu .menu-link nav {
     min-height: 35px;
+    margin-bottom: 0;
 }
-.header-menu .nav-social img {
+.header-menu .menu-info img {
     width: 28px;
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
     transition: all 1s ease;
 }
-.header-menu .nav-social img:hover {
+.header-menu .menu-info img:hover {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
     transition: all 1s ease;
 }
-.header-menu .nav-social li:nth-child(-1n+2) {
+.header-menu .menu-info li:nth-child(-1n+2) {
     border-right: 1px solid #E6E6E6;
 }
-.header-menu .nav-social li a {
+.header-menu .menu-info li > a {
     padding: 0 10px;
-    color: #E6E6E6;
     background-color: transparent;
+    color: #E6E6E6;
 }
-.header-menu .nav-social ul:nth-child(2) {
+.header-menu .menu-info .info-order {
     margin: 5px 20px 0 0;
 }
-.header-menu .nav-social ul:nth-child(2) li a:hover {
+.header-menu .menu-info .info-order > li > a:hover {
     color: #FF6600;
 }
-.header-menu .nav-menu .navbar-collapse {
+.header-menu .menu-link #menuLinkNav {
     padding-right: 0;
 }
-.header-menu .nav-menu li a {
+.header-menu .menu-link #menuLinkNav li > a {
     font-size: 18px;
     font-weight: bold;
     color: #EEEEEE;
-    border-radius: 15px 15px 0 0;
-    transition: all 0.5s ease;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.header-menu .nav-menu li a:hover {
+.header-menu .menu-link #menuLinkNav li > a:hover {
     color: #444444;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.header-menu .nav-menu li a:focus {
-    color: #444444;
+.header-menu .menu-link #menuLinkNav li > a:focus {
     background-color: #EEEEEE;
+    color: #444444;
+}
+
+
+.header-menu .menu-link .show-menu-link {
+    margin: 15px 10px 0 0;
+    text-align: right;
+    display: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+#aaa {
+    display: none;
+    color: #FFFFFF;
+}
+
+@media all and (max-width: 1140px) {
+    .header-logo{
+        width: 20%;
+    }
+    .header-menu{
+        width: 80%;
+    }
+}
+@media all and (max-width: 1065px) {
+    .header-logo .navbar-brand > img {
+        width: 120px;
+        margin-top: 0;
+    }
+    .header-menu .menu-info {
+        display: none;
+    }
+    .header-menu .menu-link nav {
+        display: none;
+    }
+    .header-menu .menu-link .show-menu-link {
+        display: block;
+    }
+    .header-menu .menu-link .show-menu-link:hover ~ #aaa,
+    .header-menu .menu-link .show-menu-link:focus ~ #aaa {
+        display: block;
+    }
 }

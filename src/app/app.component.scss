@@ -1,0 +1,30 @@
+.section {
+    top: 97px;
+    position: relative;
+}
+.section-aside {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section-content {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.back-to-top {
+    width: 35px;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    display: none;
+    opacity: 0.7;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.back-to-top:hover{
+    opacity: 1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}

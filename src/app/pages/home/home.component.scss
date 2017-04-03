@@ -1,18 +1,43 @@
-.home .title {
-    background-color: #272727;
-    padding: 5px 20px;
-}
-.home .title p {
-    font-family: 'Cloud-Light';
-    font-weight: bold;
-    font-size: 20px;
-    color: #FFFFFF;
-    margin-bottom: 0;
-    padding: 5px;
-}
-.home .content {
+.home .home-content {
     padding: 30px;
 }
-.home .paragraph-indent {
-    margin-right: 50px;
+.home .home-content .caption h3 {
+    font-family: 'Cloud-Light';
+    font-weight: bold;
+}
+.home .home-content .caption p {
+    margin-top: 20px;
+}
+.home .home-content .thumbnail {
+    border: 0 none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.home .home-content .content-shirt-color ul,
+.home .home-content .content-order-method ul {
+    margin-top: 20px;
+    list-style: none;
+}
+.home .home-content .content-shirt-color li {
+    margin: 10px;
+    display: inline-block;
+}
+.home .home-content .content-shirt-color li > span {
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.home .home-content .content-order-method li {
+    margin-bottom: 10px;
+}
+.home .home-content .content-order-method li > img {
+    width: 25px;
+    margin-right: 10px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
 }

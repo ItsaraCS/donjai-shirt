@@ -1,8 +1,87 @@
 <div class="home">
-  <div class="title">
+  <div class="topic">
     <p>ยินดีต้อนรับสู่ Donjai-Shirt คลังเสื้อยืด</p>
   </div>
-  <div class="content">
-    <p><span class="paragraph-indent"></span>การสั่งซื้อสินค้าก่อนช่วงเทศกาลสงกรานต์ 2560 ปีนี้ เพื่อการจัดส่งสินค้าถึงมือลูกค้าก่อนเทศกาลสงกรานต์ ขออนุญาตเรียนแจ้งท่านลูกค้า ดังนี้ค่ะ</p>
+  <div class="home-content">
+    <p>
+      <span class="paragraph-indent"></span>การสั่งซื้อสินค้าก่อนช่วงเทศกาลสงกรานต์ 2560 ปีนี้ เพื่อการจัดส่งสินค้าถึงมือลูกค้าก่อนเทศกาลสงกรานต์ ขออนุญาตเรียนแจ้งท่านลูกค้า ดังนี้ค่ะ
+    </p>
+    <div class="text-center"><span class="line"></span></div>
+    <div class="content-intro content-left row">
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="./assets/images/review-1.jpg">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="caption">
+              <h3>เสื้อยืด Cotton เส้นใยธรรมชาติ 100%</h3>
+              <p>
+                <span class="paragraph-indent"></span>เราคัดสรรเส้นใยธรรมชาติจาก Cotton 100% คุณภาพดีที่สุด เพื่อมาปั่นทอเป็นเส้นด้ายคุณภาพระดับ Premium ทักทอเป็นเสื้อยืดที่นุ่มสวมใส่สบาย ในเอกลักษณ์เฉพาะของ Donjai-Shirt
+              </p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center"><span class="line"></span></div>
+    <div class="content-shirt-color content-center row text-center">
+        <div class="caption">
+            <h3>มีให้เลือกมากถึง 27 สี</h3>
+        </div>
+        <ul>
+          <li *ngFor="let shirtColor of shirtColorArr">
+            <span [style.background-color]="shirtColor.shirt_color_style"></span><br>
+            <p>{{shirtColor.shirt_color_name}}</p>
+          </li>
+        </ul>
+    </div>
+    <div class="text-center"><span class="line"></span></div>
+    <div class="content-price content-center row text-center">
+        <div class="caption">
+            <h3>มีหลายแบบให้เลือก</h3>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="./assets/images/price-1.png">
+          </div>
+          <div class="caption">
+              <p>ราคาแขนสั้น (เด็ก) คอกลม-คอวี</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="./assets/images/price-2.png">
+          </div>
+          <div class="caption">
+              <p>ราคาแขนสั้น คอกลม-คอวี</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="./assets/images/price-3.png">
+          </div>
+          <div class="caption">
+              <p>ราคาแขนยาว คอกลม-คอวี</p>
+          </div>
+        </div>
+    </div>
+    <div class="text-center"><span class="line"></span></div>
+    <div class="content-order-method content-left row">
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="./assets/images/line-qrcode.png" width="60%">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="caption">
+              <h3>ช่องทางสั่งซื้อสินค้า</h3>
+              <ul>
+                  <li><img src="./assets/images/facebook-logo.png"> Donjai-Shirt</li>
+                  <li><img src="./assets/images/instagram-logo.png"> donjai_shirt</li>
+                  <li><img src="./assets/images/line-logo.png"> itsara_cs</li>
+                  <li><img src="./assets/images/tel-logo.png"> 097-0125090</li>
+              </ul>
+            </div>
+        </div>
+    </div>
   </div>
 </div>
