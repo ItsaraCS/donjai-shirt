@@ -28,3 +28,9 @@
     -moz-transition: all 1s ease;
     transition: all 1s ease;
 }
+
+@media all and (max-width: 1065px) {
+    .section {
+        top: 66px;
+    }
+}

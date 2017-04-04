@@ -5,3 +5,10 @@
 .slidebar img {
     width: 100%;
 }
+
+@media all and (max-width: 1065px) {
+    .slidebar {
+        top: 66px;
+        position: relative;
+    }
+}
