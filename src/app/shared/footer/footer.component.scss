@@ -63,3 +63,14 @@
         top: 66px;
     }
 }
+@media all and (max-width: 994px) {
+    .footer {
+        padding: 10px 0;
+    }
+    .footer-menu {
+        display: none;
+    }
+    .footer .footer-social {
+        margin-bottom: 0;
+    }
+}

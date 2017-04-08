@@ -97,19 +97,42 @@
 }
 .link-mobile {
     top: 66px;
-    right: 0;
+    right: -300px;
     position: fixed;
     display: none;
     z-index: 999;
     background-color: #FFFFFF;
     border-left: 1px solid #F5F5F5;
     border-radius: 0;
-    height: 100%;
-    width: 280px;
+    height: -webkit-calc(100% - 66px);
+    height: -moz-calc(100% - 66px);
+    height: calc(100% - 66px);
+    width: 300px;
     overflow: auto;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     transition: all 1s ease;
+}
+.link-mobile .mobile-order {
+    margin: 10px 0 15px;
+}
+.link-mobile .mobile-order li {
+    padding: 15px 5px 0;
+}
+.link-mobile .mobile-order li > a {
+    padding: 0;
+    color: #444444;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.link-mobile .mobile-order li > a:hover {
+    color: #FF6600;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .link-mobile .mobile-menu {
     padding: 0 15px;
@@ -121,8 +144,8 @@
     margin-left: 0;
     padding-left: 0;
 }
-.link-mobile .mobile-menu li > a > i {
-    margin-right: 5px;
+.link-mobile .mobile-menu li > a {
+    padding-left: 10px;
 }
 .link-mobile .mobile-menu li > a {
     font-size: 18px;
@@ -137,7 +160,7 @@
     text-align: center;
 }
 .link-mobile .mobile-social li {
-    margin: 10px auto;
+    margin: 5px auto;
 }
 .link-mobile .mobile-social li > a {
     background-color: transparent;
@@ -181,10 +204,24 @@
     .header-menu .menu-link .show-link-mobile {
         display: inline-block;
     }
+    .link-mobile {
+        display: block;
+    }
+    .header-menu .menu-link .mobile-social,
+    .header-menu .menu-link .mobile-order {
+        display: inline-block;
+    }
     .header > div {
         margin: 10px auto 0;
     }
     .header-logo .navbar-brand > img {
         margin-bottom: 0;
+    }
+    .show-link-mobile-toggle {
+        visibility: visible;
+        right: 0;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        transition: all 1s ease;
     }
 }

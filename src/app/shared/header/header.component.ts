@@ -6,13 +6,7 @@ $(document).ready(function() {
   $(document).on('click', '.show-link-mobile', function(e) {
     e.preventDefault();
     
-    var showLinkMobileClass = '{ display: block }';
-    //$('.link-mobile').css({ 'display': 'block' });
-
-    if($('.link-mobile').is(':visible'))
-      $('.link-mobile').css({ 'display': 'none' });
-    else
-      $('.link-mobile').css({ 'display': 'block' });
+    $('.link-mobile').toggleClass('show-link-mobile-toggle');
   });
 });
 
