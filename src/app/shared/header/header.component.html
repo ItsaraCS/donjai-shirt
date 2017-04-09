@@ -18,10 +18,16 @@
                         <li><a href="http://line.me/ti/p/~itsara_cs" target="_blank"><img src="./assets/images/line-logo.png"></a></li>
                     </ul>
                     <ul class="info-order nav nav-pills navbar-right">
-                        <li>
+                        <!--<li>
                             <a routerLink="/">
                                 <i class="fa fa-unlock-alt"></i> เข้าสู่ระบบ
                             </a>
+                        </li>-->
+                        <li class="info-order-login">
+                            <a routerLink="/">
+                                <i class="fa fa-user"></i> Itsara Rakchanthuek
+                            </a>
+                            <a routerLink="/">[ ออกจากระบบ ]</a>
                         </li>
                         <li>
                             <a routerLink="/">
@@ -50,11 +56,28 @@
                     </ul>
                 </nav>
                 <nav class="link-mobile navbar">
-                    <div class="text-center">
-                        <ul class="mobile-order nav nav-pills">
+                    <!--<div class="mobile-order text-center">
+                        <ul class="nav nav-pills">
                             <li>
                                 <a routerLink="/"><i class="fa fa-unlock-alt"></i><br> เข้าสู่ระบบ</a>
                             </li>
+                            <li>
+                                <a routerLink="/"><i class="fa fa-star"></i><br> รายการโปรด</a>
+                            </li>
+                            <li>
+                                <a routerLink="/"><i class="fa fa-shopping-basket"></i><br> ตะกร้าสินค้า</a>
+                            </li>
+                        </ul>
+                    </div>-->
+                    <div class="mobile-order-login text-center">
+                        <div>
+                            <img src="./assets/images/profile.png">
+                        </div>
+                        <div>
+                            <a routerLink="/"><b>Itsara Rakchanthuek</b></a><br>
+                            <a routerLink="/">ออกจากระบบ</a>
+                        </div>
+                        <ul class="nav nav-pills">
                             <li>
                                 <a routerLink="/"><i class="fa fa-star"></i><br> รายการโปรด</a>
                             </li>
@@ -81,7 +104,7 @@
                         </ul>
                     </div>
                 </nav>
-                <a class="show-link-mobile"><i class="fa fa-bars"></i> เมนู</a>
+                <a class="show-link-mobile"><i class="fa fa-bars"></i> <span>เมนู</span></a>
             </div>
         </div>
     </div>

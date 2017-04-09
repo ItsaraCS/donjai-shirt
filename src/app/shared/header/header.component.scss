@@ -2,7 +2,7 @@
     width: 100%;
     position: fixed;
     z-index: 99;
-    border-bottom: 4px solid #FF6600;
+    border-bottom: 3px solid #FF6600;
     background-color: #272727;
 }
 .header > div {
@@ -12,22 +12,22 @@
     font-size: 16px;
     color: #444444;
 }
-.header-logo nav {
+.header-logo > nav {
     margin-bottom: 0;
 }
 .header-logo .navbar-brand {
     padding: 0;
 }
 .header-logo .navbar-brand > img {
-    width: 150px;
+    width: 140px;
     margin-top: 0;
 }
-.header-menu .menu-info nav,
-.header-menu .menu-link .link-desktop {
+.header-menu > .menu-info > nav,
+.header-menu > .menu-link > .link-desktop {
     min-height: 35px;
     margin-bottom: 0;
 }
-.header-menu .menu-info img {
+.header-menu > .menu-info img {
     width: 28px;
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
@@ -36,7 +36,7 @@
     -moz-transition: all 1s ease;
     transition: all 1s ease;
 }
-.header-menu .menu-info img:hover {
+.header-menu > .menu-info img:hover {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -44,24 +44,34 @@
     -moz-transition: all 1s ease;
     transition: all 1s ease;
 }
-.header-menu .menu-info li:nth-child(-1n+2) {
+.header-menu > .menu-info li:nth-child(-1n+2) {
     border-right: 1px solid #E6E6E6;
 }
-.header-menu .menu-info li > a {
+.header-menu > .menu-info li > a {
     padding: 0 10px;
     background-color: transparent;
     color: #E6E6E6;
 }
-.header-menu .menu-info .info-order {
+.header-menu > .menu-info .info-order {
     margin: 5px 20px 0 0;
 }
-.header-menu .menu-info .info-order > li > a:hover {
-    color: #FF6600;
+.header-menu > .menu-info .info-order > .info-order-login > a {
+    display: inline-block;
 }
-.header-menu .menu-link .link-desktop {
+.header-menu > .menu-info .info-order > .info-order-login > a:nth-child(1) {
     padding-right: 0;
 }
-.header-menu .menu-link .link-desktop li > a {
+.header-menu > .menu-info .info-order > .info-order-login > a:nth-child(2) {
+    padding-left: 0;
+}
+.header-menu > .menu-info .info-order > li > a:hover {
+    color: #FF6600;
+}
+.header-menu > .menu-link > .link-desktop {
+    padding-right: 0;
+    border: 0;
+}
+.header-menu > .menu-link > .link-desktop li > a {
     font-size: 18px;
     font-weight: bold;
     color: #EEEEEE;
@@ -72,97 +82,142 @@
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-.header-menu .menu-link .link-desktop li > a:hover {
+.header-menu > .menu-link > .link-desktop li > a:hover {
     color: #444444;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-.header-menu .menu-link .link-desktop li > a:focus {
+.header-menu > .menu-link > .link-desktop li > a:focus {
     background-color: #EEEEEE;
     color: #444444;
 }
-
-
-.header-menu .menu-link .show-link-mobile {
-    text-align: right;
-    margin: 5px 10px 0 0;
+.header-menu > .menu-link > .show-link-mobile {
     display: none;
+    float: right;
+    margin: 5px 10px 0 0;
+    text-align: right;
     text-decoration: none;
-    cursor: pointer;
     font-size: 25px;
     font-weight: bold;
     color: #EEEEEE;
-    float: right;
+    cursor: pointer;
 }
 .link-mobile {
-    top: 66px;
+    display: none;
+    top: 65px;
     right: -300px;
     position: fixed;
-    display: none;
-    z-index: 999;
-    background-color: #FFFFFF;
+    width: 300px;
+    height: -webkit-calc(100% - 65px);
+    height: -moz-calc(100% - 65px);
+    height: calc(100% - 65px);
+    border-top: 0;
     border-left: 1px solid #F5F5F5;
     border-radius: 0;
-    height: -webkit-calc(100% - 66px);
-    height: -moz-calc(100% - 66px);
-    height: calc(100% - 66px);
-    width: 300px;
     overflow: auto;
+    z-index: 999;
+    background-color: #FFFFFF;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     transition: all 1s ease;
 }
-.link-mobile .mobile-order {
-    margin: 10px 0 15px;
+.link-mobile > .mobile-order {
+    padding: 10px 0;
+    background: -webkit-linear-gradient(#E5E5E5, #FFFFFF);
+    background: -moz-linear-gradient(#E5E5E5, #FFFFFF);
+    background: linear-gradient(#E5E5E5, #FFFFFF);
 }
-.link-mobile .mobile-order li {
-    padding: 15px 5px 0;
+.link-mobile > .mobile-order > ul {
+    display: inline-block;
 }
-.link-mobile .mobile-order li > a {
+.link-mobile > .mobile-order li {
+    padding: 15px 10px 0;
+}
+.link-mobile > .mobile-order li > a {
     padding: 0;
-    color: #444444;
     text-decoration: none;
     background-color: transparent;
+    color: #444444;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-.link-mobile .mobile-order li > a:hover {
+.link-mobile > .mobile-order li > a:hover {
     color: #FF6600;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-.link-mobile .mobile-menu {
+.link-mobile > .mobile-order-login {
+    padding: 20px 0 10px;
+    background: -webkit-linear-gradient(#E5E5E5, #FFFFFF);
+    background: -moz-linear-gradient(#E5E5E5, #FFFFFF);
+    background: linear-gradient(#E5E5E5, #FFFFFF);
+}
+.link-mobile > .mobile-order-login > div:nth-child(1) {
+    float: left;
+    margin-left: 20px;
+}
+.link-mobile > .mobile-order-login > div:nth-child(2) {
+    float: left;
+    padding: 5px 0 5px 15px;
+    text-align: left;
+}
+.link-mobile > .mobile-order-login > div:nth-child(1) img {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+}
+.link-mobile > .mobile-order-login > ul {
+    clear: both;
+    display: inline-block;
+}
+.link-mobile > .mobile-order-login li {
+    padding: 20px 10px 0;
+}
+.link-mobile > .mobile-order-login > div:nth-child(2) a,
+.link-mobile > .mobile-order-login li a {
+    padding: 0;
+    text-decoration: none;
+    background-color: transparent;
+    color: #444444;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.link-mobile > .mobile-order-login > div:nth-child(2) a:hover,
+.link-mobile > .mobile-order-login li > a:hover {
+    color: #FF6600;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.link-mobile > .mobile-menu {
     padding: 0 15px;
     list-style: none;
 }
-.link-mobile .mobile-menu li {
+.link-mobile > .mobile-menu > li {
     padding: 15px 0;
     border-bottom: 1px solid #CCCCCC;
-    margin-left: 0;
-    padding-left: 0;
 }
-.link-mobile .mobile-menu li > a {
+.link-mobile > .mobile-menu > li > a {
+    text-decoration: none;
     padding-left: 10px;
-}
-.link-mobile .mobile-menu li > a {
     font-size: 18px;
     font-weight: bold;
     color: #444444;
-    text-decoration: none;
 }
-.link-mobile .mobile-menu li > a:hover {
+.link-mobile > .mobile-menu > li > a:hover {
     color: #FF6600;
 }
-.link-mobile .mobile-social {
-    text-align: center;
-}
-.link-mobile .mobile-social li {
+.link-mobile .mobile-social > li {
     margin: 5px auto;
 }
-.link-mobile .mobile-social li > a {
+.link-mobile .mobile-social > li > a {
     background-color: transparent;
 }
 .link-mobile .mobile-social img {
@@ -184,38 +239,42 @@
 }
 
 @media all and (max-width: 1140px) {
-    .header-logo{
+    .header-logo {
         width: 20%;
     }
-    .header-menu{
+    .header-menu {
         width: 80%;
     }
 }
+
 @media all and (max-width: 1065px) {
-    .header-logo .navbar-brand > img {
-        width: 80px;
-    }
-    .header-menu .menu-info {
-        display: none;
-    }
-    .header-menu .menu-link .link-desktop {
-        display: none;
-    }
-    .header-menu .menu-link .show-link-mobile {
-        display: inline-block;
-    }
-    .link-mobile {
-        display: block;
-    }
-    .header-menu .menu-link .mobile-social,
-    .header-menu .menu-link .mobile-order {
-        display: inline-block;
-    }
     .header > div {
         margin: 10px auto 0;
     }
     .header-logo .navbar-brand > img {
         margin-bottom: 0;
+    }
+    .header-logo .navbar-brand > img {
+        width: 80px;
+    }
+    .header-menu > .menu-info {
+        display: none;
+    }
+    .header-menu > .menu-link > .link-desktop {
+        display: none;
+    }
+    .header-menu > .menu-link > .show-link-mobile {
+        display: inline-block;
+    }
+    .header-menu > .menu-link > .link-mobile {
+        display: block;
+    }
+    .header-menu > .menu-link > .link-mobile > .mobile-order,
+    .header-menu > .menu-link > .link-mobile > .mobile-order-login {
+        display: block;
+    }
+    .header-menu > .menu-link > .link-mobile .mobile-social {
+        display: inline-block;
     }
     .show-link-mobile-toggle {
         visibility: visible;
